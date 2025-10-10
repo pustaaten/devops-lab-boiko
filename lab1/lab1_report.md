@@ -50,7 +50,9 @@ For more examples and ideas, visit:
 <img width="1536" height="184" alt="image" src="https://github.com/user-attachments/assets/f7c1e2ca-89a2-4c09-940e-a1715e064ba7" />
 
 
+
 Изучила базовые команды: 
+
 5. 
 PS C:\Users\Boyko> docker images
 REPOSITORY    TAG       IMAGE ID       CREATED        SIZE
@@ -64,6 +66,8 @@ CONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
 PS C:\Users\Boyko> docker ps -a
 CONTAINER ID   IMAGE         COMMAND    CREATED         STATUS                          PORTS     NAMES
 0c4d283ef5ba   hello-world   "/hello"   6 minutes ago   Exited (0) About a minute ago             hopeful_pasteur
+
+<img width="1404" height="195" alt="image" src="https://github.com/user-attachments/assets/bc481576-ab6e-47ed-b356-488e6e12a156" />
 
 
 Работа с готовыми образами
@@ -81,6 +85,8 @@ docker.io/library/ubuntu:latest
 PS C:\Users\Boyko> docker run -it ubuntu bash
 root@f0ccd0bb0963:/# apt update && apt install -y curl
 
+<img width="904" height="187" alt="image" src="https://github.com/user-attachments/assets/1ec1c4c1-250d-4d95-b1ad-1333e626719d" />
+
 9. Проверила установку curl
 root@ce5628550dfd:/# curl --version
 curl 8.5.0 (x86_64-pc-linux-gnu) libcurl/8.5.0 OpenSSL/3.0.13 zlib/1.3 brotli/1.1.0 zstd/1.5.5 libidn2/2.3.7 libpsl/0.21.2 (+libidn2/2.3.7) libssh/0.10.6/openssl/zlib nghttp2/1.59.0 librtmp/2.3 OpenLDAP/2.6.7
@@ -93,6 +99,8 @@ root@f0ccd0bb0963:/# ls
 bin  boot  dev  etc  home  lib  lib64  media  mnt  opt  proc  root  run  sbin  srv  sys  tmp  usr  var
 root@f0ccd0bb0963:/# exit
 exit
+
+<img width="1292" height="144" alt="image" src="https://github.com/user-attachments/assets/860b6524-1adc-4f72-8f3a-b56e53f195bb" />
 
 
 Запуск веб-сервера:
@@ -113,7 +121,7 @@ f80aba050ead: Pull complete
 Digest: sha256:7c1b9a91514d1eb5288d7cd6e91d9f451707911bfaea9307a3acbc811d4aa82e
 Status: Downloaded newer image for nginx:alpine
 
-12. Зашла по ссылке в браузере http://localhost:8080/
+13. Зашла по ссылке в браузере http://localhost:8080/
 Вылезло окно "Welcome to nginx!
 If you see this page, the nginx web server is successfully installed and working. Further configuration is required.
 
@@ -121,7 +129,6 @@ For online documentation and support please refer to nginx.org.
 Commercial support is available at nginx.com.
 
 Thank you for using nginx."
-
 
 13. Посмотрела логи: 
 "172.17.0.1 - - [10/Oct/2025:13:30:06 +0000] "GET / HTTP/1.1" 200 615 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 YaBrowser/25.8.0.0 Safari/537.36" "-"
@@ -135,6 +142,8 @@ bin                   etc                   mnt                   run           
 dev                   home                  opt                   sbin                  usr
 docker-entrypoint.d   lib                   proc                  srv                   var
 docker-entrypoint.sh  media                 root                  sys
+
+<img width="1133" height="349" alt="image" src="https://github.com/user-attachments/assets/fc8e7e13-23ac-489e-a854-830e43554edb" />
 
 
 Управление контейнерами:
@@ -166,6 +175,8 @@ web-server
 PS C:\Users\Boyko> docker rmi nginx:alpine
 Untagged: nginx:alpine
 Deleted: sha256:7c1b9a91514d1eb5288d7cd6e91d9f451707911bfaea9307a3acbc811d4aa82e
+<img width="1915" height="512" alt="image" src="https://github.com/user-attachments/assets/ad2288bd-acb3-4b05-8006-1ea9da67bdc5" />
+
 
 
 Работа с томами (volumes):
@@ -185,13 +196,26 @@ volume-test
 PS C:\Users\Boyko> docker rm volume-test
 volume-test
 
-23. Создала контейнер develop-test с тем же томом 
+<img width="1683" height="365" alt="image" src="https://github.com/user-attachments/assets/82001397-7233-4b68-aca1-38f3b583d4f2" />
+
+
+24. Создала контейнер develop-test с тем же томом 
 PS C:\Users\Boyko> docker run -it --name develop-test -d -v my-volume:/data ubuntu bash
 194c77aaa68f1d129a35a3fcbbabff76ac2be1cb7fbde11cffa61929efc37056
 
-24. Посмотрела, что файл существует теперь в этом контейнере: 
+<img width="1248" height="45" alt="image" src="https://github.com/user-attachments/assets/a09b5bcf-0f4c-4a6f-8e94-435ffa993173" />
+
+26. Посмотрела, что файл существует теперь в этом контейнере: 
 PS C:\Users\Boyko> docker exec -it 194c77aaa68f bash
 root@194c77aaa68f:/# ls
 bin  boot  data  dev  etc  home  lib  lib64  media  mnt  opt  proc  root  run  sbin  srv  sys  tmp  usr  var
 root@194c77aaa68f:/# ls data
 test.txt
+
+<img width="1507" height="189" alt="image" src="https://github.com/user-attachments/assets/15a35dc8-b8ab-44a3-92dc-cdb911b905f4" />
+
+Как это выглядит сейчас в ЛК Докера: 
+<img width="1574" height="537" alt="image" src="https://github.com/user-attachments/assets/ed966078-a615-4b89-b54f-bb53d3b6a51d" />
+<img width="1574" height="246" alt="image" src="https://github.com/user-attachments/assets/4c36a0e9-03c5-4491-8b15-5535d7e7b5bd" />
+
+
