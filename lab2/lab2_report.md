@@ -1,10 +1,17 @@
 University: ITMO University
+
 Faculty: FICT
+
 Course: Введение в веб технологии
+
 Year: 2025/2026
+
 Author: Boyko Ekaterina Olegovna
+
 Lab: Lab2
+
 Date of create: 11.10.2025
+
 Date of finished: 13.10.2025
 
 Прежде чем я присутпила к выполнению Лабораторной работы #2, я создала Dockerfile из лабораторной №1 под звездочкой: 
