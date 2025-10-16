@@ -70,6 +70,7 @@ Date of finished: 16.10.2025
 <img width="1280" height="697" alt="image" src="https://github.com/user-attachments/assets/b2323146-a93d-46fb-ab86-c18a053b42ab" />
 
 Стилизация была выполнена ранее на Этапе 5
+
 <img width="393" height="405" alt="image" src="https://github.com/user-attachments/assets/10aac0b7-db1b-477f-8758-6a72c66c1def" />
 
 
@@ -90,19 +91,6 @@ Date of finished: 16.10.2025
 
 7. Создала статические файлы с помощью команды mkdocs build, файлы лежат в репозитории 
 
-
-
-
-
-
-
-
-
-
-
-
-
-7.
 
 
 
