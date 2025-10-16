@@ -78,7 +78,10 @@ Date of finished: 16.10.2025
 
 6. Запустила локальный сервер: mkdocs serve и получила ссылку на сайт
 
-Обзор: 
+<img width="890" height="121" alt="image" src="https://github.com/user-attachments/assets/701ee3e8-31bb-4547-b986-ffca9ab4a2e1" />
+
+
+Обзор на сайт: 
 <img width="1280" height="698" alt="image" src="https://github.com/user-attachments/assets/13d7945b-70a0-4141-8bad-c0038f70d5b0" />
 <img width="1280" height="698" alt="image" src="https://github.com/user-attachments/assets/2bb78ba0-e677-47bf-a2e1-9d4ddc7da44f" />
 <img width="1280" height="697" alt="image" src="https://github.com/user-attachments/assets/f6823f36-e0ec-4801-8eec-c1caef8e5788" />
